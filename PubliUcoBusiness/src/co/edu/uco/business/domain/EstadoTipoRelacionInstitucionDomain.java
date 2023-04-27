@@ -1,11 +1,13 @@
-package co.edu.uco.business.domain;
+ package co.edu.uco.business.domain;
 
 import java.util.UUID;
 
 import co.edu.uco.crosscutting.utils.UtilText;
 import co.edu.uco.crosscutting.utils.UtilUUID;
+import co.edu.uco.entities.EstadoTipoRelacionInstitucionEntity;
 
 public class EstadoTipoRelacionInstitucionDomain {
+	private static final EstadoTipoRelacionInstitucionDomain DEFAULT_OBJECT = new EstadoTipoRelacionInstitucionDomain();
 	private UUID identificador;
 	private String nombre;
 	private String descripcion;
@@ -19,6 +21,20 @@ public class EstadoTipoRelacionInstitucionDomain {
 		setDescripcion(descripcion);	
 		}
 	
+	
+	
+	
+	private  EstadoTipoRelacionInstitucionDomain() {
+		super();
+		setIdentificador(UtilUUID.getDefaultUuid());
+		setNombre(UtilText.getUtilText().getDefaultValue());
+		setDescripcion(UtilText.getUtilText().getDefaultValue());
+	}
+	
+	
+	public static EstadoTipoRelacionInstitucionDomain getDefaultObject() {
+		return DEFAULT_OBJECT;
+	}
 	
 	
 	public final UUID getIdentificador() {
