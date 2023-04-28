@@ -7,6 +7,8 @@ import co.edu.uco.crosscutting.utils.UtilUUID;
 import co.edu.uco.entities.EstadoTipoRelacionInstitucionEntity;
 
 public class EstadoTipoRelacionInstitucionDomain {
+	
+	
 	private static final EstadoTipoRelacionInstitucionDomain DEFAULT_OBJECT = new EstadoTipoRelacionInstitucionDomain();
 	private UUID identificador;
 	private String nombre;
