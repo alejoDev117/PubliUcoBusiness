@@ -9,6 +9,20 @@ import co.edu.uco.entities.EstadoTipoRelacionInstitucionEntity;
 import co.edu.uco.entities.TipoRelacionInstitucionEntity;
 
 public final class TipoRelacionInstitucionAssembler implements Assembler<TipoRelacionInstitucionDomain,TipoRelacionInstitucionDTO,TipoRelacionInstitucionEntity> {
+	
+	private static final Assembler<TipoRelacionInstitucionDomain,TipoRelacionInstitucionDTO,TipoRelacionInstitucionEntity> INSTANCE = new TipoRelacionInstitucionAssembler();
+	
+	private TipoRelacionInstitucionAssembler() {
+		super();
+	}
+	
+	
+
+	public static final Assembler<TipoRelacionInstitucionDomain, TipoRelacionInstitucionDTO, TipoRelacionInstitucionEntity> getInstance() {
+		return INSTANCE;
+	}
+
+
 
 	@Override
 	public TipoRelacionInstitucionDTO toDTOFromDomain(TipoRelacionInstitucionDomain domain) {
