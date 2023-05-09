@@ -17,7 +17,7 @@ public final class EstadoTipoRelacionInstitucionBusinessImp implements EstadoTip
 	}
 	@Override
 	public final void register( final EstadoTipoRelacionInstitucionDomain domain) {
-	 final 	EstadoTipoRelacionInstitucionEntity entity = EstadoTipoRelacionInstitucionAssembler.getInstance().toEntityFromDomain(domain)
+	 final 	EstadoTipoRelacionInstitucionEntity entity = EstadoTipoRelacionInstitucionAssembler.getInstance().toEntityFromDomain(domain);
 		daoFactory.getEstadoTipoRelacionInstitucionDAO().create(entity);
 		
 	}
@@ -25,13 +25,14 @@ public final class EstadoTipoRelacionInstitucionBusinessImp implements EstadoTip
 	@Override
 	public final List<EstadoTipoRelacionInstitucionDomain> list(final EstadoTipoRelacionInstitucionDomain domain) {
 		 final 	EstadoTipoRelacionInstitucionEntity entity = EstadoTipoRelacionInstitucionAssembler.getInstance().toEntityFromDomain(domain);
-		 final List<EstadoTipoRelacionInstitucionEntity> result = daoFactory.getEstadoTipoRelacionInstitucionDAO().read(entity);
+		 final List<EstadoTipoRelacionInstitucionEntity> resultEntityList = daoFactory.getEstadoTipoRelacionInstitucionDAO().read(entity);
 		 
+		 return EstadoTipoRelacionInstitucionAssembler.getInstance().toDomainListFromEntityList(resultEntityList);
 	}
 
 	@Override
 	public  final void modify( final EstadoTipoRelacionInstitucionDomain domain) {
-		final 	EstadoTipoRelacionInstitucionEntity entity = EstadoTipoRelacionInstitucionAssembler.getInstance().toEntityFromDomain(domain)
+		final 	EstadoTipoRelacionInstitucionEntity entity = EstadoTipoRelacionInstitucionAssembler.getInstance().toEntityFromDomain(domain);
 				daoFactory.getEstadoTipoRelacionInstitucionDAO().update(entity);
 				
 		
@@ -39,7 +40,7 @@ public final class EstadoTipoRelacionInstitucionBusinessImp implements EstadoTip
 
 	@Override
 	public final void drop( final EstadoTipoRelacionInstitucionDomain domain) {
-		final 	EstadoTipoRelacionInstitucionEntity entity = EstadoTipoRelacionInstitucionAssembler.getInstance().toEntityFromDomain(domain)
+		final 	EstadoTipoRelacionInstitucionEntity entity = EstadoTipoRelacionInstitucionAssembler.getInstance().toEntityFromDomain(domain);
 				daoFactory.getEstadoTipoRelacionInstitucionDAO().delete(entity);
 				
 		

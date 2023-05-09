@@ -1,5 +1,7 @@
 package co.edu.uco.business.assembler.concrete;
 
+import java.util.List;
+
 import co.edu.uco.business.assembler.Assembler;
 import co.edu.uco.business.domain.EstadoAdministradorCategoriaDomain;
 import co.edu.uco.dto.EstadoAdministradorCategoriaDTO;
@@ -42,6 +44,15 @@ public final  class EstadoAdministradorCategoriaAssembler implements Assembler<E
 	@Override
 	public EstadoAdministradorCategoriaDomain toDomainFromEntity(EstadoAdministradorCategoriaEntity entity) {
 		return new EstadoAdministradorCategoriaDomain(entity.getIdentificador(),entity.getNombre(),entity.getDescripcion());
+	}
+
+
+
+	@Override
+	public List<EstadoAdministradorCategoriaDomain> toDomainListFromEntityList(
+			List<EstadoAdministradorCategoriaEntity> entityList) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

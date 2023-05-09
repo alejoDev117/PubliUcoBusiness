@@ -1,5 +1,7 @@
 package co.edu.uco.business.assembler.concrete;
 
+import java.util.List;
+
 import co.edu.uco.business.assembler.Assembler;
 import co.edu.uco.business.domain.EstadoEscritorDomain;
 import co.edu.uco.dto.EstadoEscritorDTO;
@@ -40,6 +42,14 @@ public final class EstadoEscritorAssembler implements Assembler<EstadoEscritorDo
 	@Override
 	public EstadoEscritorDomain toDomainFromEntity(EstadoEscritorEntity entity) {
 		return new EstadoEscritorDomain(entity.getIdentificador(),entity.getNombre(),entity.getDescripcion());
+	}
+
+
+
+	@Override
+	public List<EstadoEscritorDomain> toDomainListFromEntityList(List<EstadoEscritorEntity> entityList) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
