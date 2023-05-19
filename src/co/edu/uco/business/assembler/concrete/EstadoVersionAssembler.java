@@ -1,5 +1,7 @@
 package co.edu.uco.business.assembler.concrete;
 
+import java.util.List;
+
 import co.edu.uco.business.assembler.Assembler;
 import co.edu.uco.business.domain.EstadoVersionDomain;
 import co.edu.uco.dto.EstadoVersionDTO;
@@ -35,6 +37,12 @@ public final class EstadoVersionAssembler implements Assembler<EstadoVersionDoma
 	@Override
 	public EstadoVersionDomain toDomainFromEntity(EstadoVersionEntity entity) {
 		return new EstadoVersionDomain(entity.getIdentificador(),entity.getNombre(),entity.getDescripcion());
+	}
+
+	@Override
+	public List<EstadoVersionDomain> toDomainListFromEntityList(List<EstadoVersionEntity> entityList) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 

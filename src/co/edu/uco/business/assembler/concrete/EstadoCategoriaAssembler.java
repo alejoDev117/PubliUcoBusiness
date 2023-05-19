@@ -1,9 +1,13 @@
 package co.edu.uco.business.assembler.concrete;
 
+import java.util.List;
+
+
 import co.edu.uco.business.assembler.Assembler;
 import co.edu.uco.business.domain.EstadoCategoriaDomain;
 import co.edu.uco.dto.EstadoCategoriaDTO;
 import co.edu.uco.entities.EstadoCategoriaEntity;
+
 
 public final class EstadoCategoriaAssembler implements Assembler<EstadoCategoriaDomain,EstadoCategoriaDTO,EstadoCategoriaEntity>{
 	
@@ -40,6 +44,14 @@ public final class EstadoCategoriaAssembler implements Assembler<EstadoCategoria
 	@Override
 	public EstadoCategoriaDomain toDomainFromEntity(EstadoCategoriaEntity entity) {
 		return new EstadoCategoriaDomain(entity.getIdentificador(),entity.getNombre(),entity.getDescripcion());
+	}
+
+
+
+	@Override
+	public List<EstadoCategoriaDomain> toDomainListFromEntityList(List<EstadoCategoriaEntity> entityList) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 

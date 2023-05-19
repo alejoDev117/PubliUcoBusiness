@@ -1,5 +1,7 @@
 package co.edu.uco.business.assembler.concrete;
 
+import java.util.List;
+
 import co.edu.uco.business.assembler.Assembler;
 import co.edu.uco.business.domain.EstadoPreferenciaDomain;
 import co.edu.uco.dto.EstadoPreferenciaDTO;
@@ -40,6 +42,14 @@ public final class EstadoPreferenciaAssembler implements Assembler<EstadoPrefere
 	@Override
 	public EstadoPreferenciaDomain toDomainFromEntity(EstadoPreferenciaEntity entity) {
 		return new EstadoPreferenciaDomain(entity.getIdentificador(),entity.getNombre(),entity.getDescripcion());
+	}
+
+
+
+	@Override
+	public List<EstadoPreferenciaDomain> toDomainListFromEntityList(List<EstadoPreferenciaEntity> entityList) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

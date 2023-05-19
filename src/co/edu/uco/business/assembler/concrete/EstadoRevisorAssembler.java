@@ -1,5 +1,7 @@
 package co.edu.uco.business.assembler.concrete;
 
+import java.util.List;
+
 import co.edu.uco.business.assembler.Assembler;
 import co.edu.uco.business.domain.EstadoRevisorDomain;
 import co.edu.uco.dto.EstadoRevisorDTO;
@@ -41,6 +43,13 @@ public final class EstadoRevisorAssembler implements Assembler<EstadoRevisorDoma
 	@Override
 	public EstadoRevisorDomain toDomainFromEntity(EstadoRevisorEntity entity) {
 		return new EstadoRevisorDomain(entity.getIdentificador(),entity.getNombre(),entity.getDescripcion());
+	}
+
+
+	@Override
+	public List<EstadoRevisorDomain> toDomainListFromEntityList(List<EstadoRevisorEntity> entityList) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

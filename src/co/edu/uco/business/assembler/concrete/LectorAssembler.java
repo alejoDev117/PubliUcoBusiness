@@ -48,7 +48,7 @@ public final class LectorAssembler implements Assembler<LectorDomain,LectorDTO,L
 				domain.getPrimerNombre(),domain.getSegundoNombre(),domain.getPrimerApellido(),domain.getSegundoApellido(),domain.getCorreoElectronico(),domain.getIndicadorPaisTelefono(),domain.getNumeroTelefonicoMovil(),
 				TipoRelacionInstitucionAssembler.getInstance().toEntityFromDomain(domain.getTipoRelacionIntitucion()),domain.isCorreoEstaVerificado(),domain.isNumeroTelefonoMovilEstaVerificado(),EstadoLectorAssembler.getInstance().toEntityFromDomain(domain.getEstado()));
 	}
-	}
+	
 
 	@Override
 	public LectorDomain toDomainFromEntity(LectorEntity entity) {

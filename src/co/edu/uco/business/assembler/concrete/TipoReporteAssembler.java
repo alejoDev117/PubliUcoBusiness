@@ -1,5 +1,7 @@
 package co.edu.uco.business.assembler.concrete;
 
+import java.util.List;
+
 import co.edu.uco.business.assembler.Assembler;
 import co.edu.uco.business.domain.TipoReporteDomain;
 import co.edu.uco.dto.TipoReporteDTO;
@@ -41,6 +43,13 @@ public final class TipoReporteAssembler implements Assembler<TipoReporteDomain,T
 	@Override
 	public TipoReporteDomain toDomainFromEntity(TipoReporteEntity entity) {
 		return new TipoReporteDomain(entity.getIdentificador(),entity.getNombre(),entity.getDescripcion());
+	}
+
+
+	@Override
+	public List<TipoReporteDomain> toDomainListFromEntityList(List<TipoReporteEntity> entityList) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

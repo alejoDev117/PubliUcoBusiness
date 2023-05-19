@@ -53,4 +53,14 @@ public final class EstadoTipoRelacionInstitucionAssembler implements Assembler<E
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
 
+
+	@Override
+	public List<EstadoTipoRelacionInstitucionDTO> toDtoListFromDomainList(
+			List<EstadoTipoRelacionInstitucionDomain> domainList) {
+		return domainList.stream().map(dto -> toDTOFromDomain(dto)).toList();
+	}
+
+
+	
+
 }

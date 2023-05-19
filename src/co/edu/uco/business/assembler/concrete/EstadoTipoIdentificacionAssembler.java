@@ -1,5 +1,7 @@
 package co.edu.uco.business.assembler.concrete;
 
+import java.util.List;
+
 import co.edu.uco.business.assembler.Assembler;
 import co.edu.uco.business.domain.EstadoTipoIdentificacionDomain;
 import co.edu.uco.dto.EstadoTipoIdentificacionDTO;
@@ -35,6 +37,13 @@ public final class EstadoTipoIdentificacionAssembler implements Assembler<Estado
 	@Override
 	public EstadoTipoIdentificacionDomain toDomainFromEntity(EstadoTipoIdentificacionEntity entity) {
 		return new EstadoTipoIdentificacionDomain(entity.getIdentificador(),entity.getNombre(),entity.getDescripcion());
+	}
+
+	@Override
+	public List<EstadoTipoIdentificacionDomain> toDomainListFromEntityList(
+			List<EstadoTipoIdentificacionEntity> entityList) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

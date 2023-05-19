@@ -1,5 +1,7 @@
 package co.edu.uco.business.assembler.concrete;
 
+import java.util.List;
+
 import co.edu.uco.business.assembler.Assembler;
 import co.edu.uco.business.domain.EstadoPlanDomain;
 import co.edu.uco.dto.EstadoPlanDTO;
@@ -41,6 +43,13 @@ public final class EstadoPlanAssembler implements Assembler<EstadoPlanDomain,Est
 	@Override
 	public EstadoPlanDomain toDomainFromEntity(EstadoPlanEntity entity) {
 		return new EstadoPlanDomain(entity.getIdentificador(),entity.getNombre(),entity.getDescripcion());
+	}
+
+
+	@Override
+	public List<EstadoPlanDomain> toDomainListFromEntityList(List<EstadoPlanEntity> entityList) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
