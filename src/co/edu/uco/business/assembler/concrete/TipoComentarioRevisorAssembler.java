@@ -44,6 +44,12 @@ public final class TipoComentarioRevisorAssembler implements Assembler<TipoComen
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public List<TipoComentarioRevisorDTO> toDtoListFromDomainList(List<TipoComentarioRevisorDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }
