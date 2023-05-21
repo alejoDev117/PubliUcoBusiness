@@ -49,8 +49,14 @@ public final class CategoriaAssembler implements Assembler<CategoriaDomain,Categ
 
 	@Override
 	public List<CategoriaDomain> toDomainListFromEntityList(List<CategoriaEntity> entityList) {
-		// TODO Auto-generated method stub
-		return null;
+
+		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
+	}
+
+
+	@Override
+	public List<CategoriaDTO> toDtoListFromDomainList(List<CategoriaDomain> domainList) {
+		return domainList.stream().map(dto -> toDTOFromDomain(dto)).toList();
 	}
 	
 	
