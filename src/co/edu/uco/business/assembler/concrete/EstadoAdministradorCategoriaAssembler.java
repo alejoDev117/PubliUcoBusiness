@@ -55,4 +55,13 @@ public final  class EstadoAdministradorCategoriaAssembler implements Assembler<E
 		return null;
 	}
 
+
+
+	@Override
+	public List<EstadoAdministradorCategoriaDTO> toDtoListFromDomainList(
+			List<EstadoAdministradorCategoriaDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -51,6 +51,13 @@ public final class TipoReporteAssembler implements Assembler<TipoReporteDomain,T
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<TipoReporteDTO> toDtoListFromDomainList(List<TipoReporteDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

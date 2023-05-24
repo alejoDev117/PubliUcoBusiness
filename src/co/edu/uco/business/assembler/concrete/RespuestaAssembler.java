@@ -50,6 +50,13 @@ public final  class RespuestaAssembler implements Assembler<RespuestaDomain,Resp
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<RespuestaDTO> toDtoListFromDomainList(List<RespuestaDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

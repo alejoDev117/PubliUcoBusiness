@@ -52,6 +52,13 @@ public final class TipoIdentificacionAssembler implements Assembler<TipoIdentifi
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<TipoIdentificacionDTO> toDtoListFromDomainList(List<TipoIdentificacionDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }

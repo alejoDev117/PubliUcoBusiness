@@ -52,4 +52,12 @@ public final class EstadoEscritorAssembler implements Assembler<EstadoEscritorDo
 		return null;
 	}
 
+
+
+	@Override
+	public List<EstadoEscritorDTO> toDtoListFromDomainList(List<EstadoEscritorDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

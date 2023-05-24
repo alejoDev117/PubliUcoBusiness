@@ -44,6 +44,12 @@ public final class EstadoVersionAssembler implements Assembler<EstadoVersionDoma
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public List<EstadoVersionDTO> toDtoListFromDomainList(List<EstadoVersionDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 
 }

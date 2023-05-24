@@ -65,6 +65,13 @@ public final class RevisorAssembler implements Assembler<RevisorDomain,RevisorDT
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<RevisorDTO> toDtoListFromDomainList(List<RevisorDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

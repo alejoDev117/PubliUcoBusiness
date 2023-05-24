@@ -56,4 +56,13 @@ public final class EstadoLectorAssembler implements Assembler<EstadoLectorDomain
 		return null;
 	}
 
+
+
+
+	@Override
+	public List<EstadoLectorDTO> toDtoListFromDomainList(List<EstadoLectorDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

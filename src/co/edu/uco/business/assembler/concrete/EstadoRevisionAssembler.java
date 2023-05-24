@@ -52,4 +52,12 @@ public final class EstadoRevisionAssembler implements Assembler<EstadoRevisionDo
 		return null;
 	}
 
+
+
+	@Override
+	public List<EstadoRevisionDTO> toDtoListFromDomainList(List<EstadoRevisionDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

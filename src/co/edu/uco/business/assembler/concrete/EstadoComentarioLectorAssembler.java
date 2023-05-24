@@ -54,4 +54,12 @@ public final class EstadoComentarioLectorAssembler implements Assembler<EstadoCo
 		return null;
 	}
 
+
+
+	@Override
+	public List<EstadoComentarioLectorDTO> toDtoListFromDomainList(List<EstadoComentarioLectorDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

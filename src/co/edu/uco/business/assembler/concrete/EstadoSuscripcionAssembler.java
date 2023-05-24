@@ -52,4 +52,12 @@ public final class EstadoSuscripcionAssembler implements Assembler<EstadoSuscrip
 		return null;
 	}
 
+
+
+	@Override
+	public List<EstadoSuscripcionDTO> toDtoListFromDomainList(List<EstadoSuscripcionDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

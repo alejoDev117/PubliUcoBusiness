@@ -51,6 +51,13 @@ public final class TipoEscritorAssembler implements Assembler<TipoEscritorDomain
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<TipoEscritorDTO> toDtoListFromDomainList(List<TipoEscritorDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	

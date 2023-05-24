@@ -56,6 +56,14 @@ public final class CategoriaAdministradorCategoriaAssembler implements Assembler
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<CategoriaAdministradorCategoriaDTO> toDtoListFromDomainList(
+			List<CategoriaAdministradorCategoriaDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	

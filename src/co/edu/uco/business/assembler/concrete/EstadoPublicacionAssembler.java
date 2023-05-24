@@ -51,6 +51,13 @@ public final  class EstadoPublicacionAssembler implements Assembler<EstadoPublic
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<EstadoPublicacionDTO> toDtoListFromDomainList(List<EstadoPublicacionDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	

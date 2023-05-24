@@ -51,6 +51,13 @@ public final class EstadoRevisorAssembler implements Assembler<EstadoRevisorDoma
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<EstadoRevisorDTO> toDtoListFromDomainList(List<EstadoRevisorDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

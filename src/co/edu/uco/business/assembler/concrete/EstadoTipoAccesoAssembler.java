@@ -44,6 +44,12 @@ public final class EstadoTipoAccesoAssembler implements Assembler<EstadoTipoAcce
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public List<EstadoTipoAccesoDTO> toDtoListFromDomainList(List<EstadoTipoAccesoDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	

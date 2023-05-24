@@ -52,4 +52,12 @@ public final class EstadoPreferenciaAssembler implements Assembler<EstadoPrefere
 		return null;
 	}
 
+
+
+	@Override
+	public List<EstadoPreferenciaDTO> toDtoListFromDomainList(List<EstadoPreferenciaDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

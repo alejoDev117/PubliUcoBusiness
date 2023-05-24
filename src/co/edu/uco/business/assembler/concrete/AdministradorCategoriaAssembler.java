@@ -58,6 +58,13 @@ public final class AdministradorCategoriaAssembler implements Assembler<Administ
 			List<AdministradorCategoriaEntity> entityList) {
 		return entityList.stream().map(entity -> toDomainFromEntity(entity)).toList();
 	}
+
+
+	@Override
+	public List<AdministradorCategoriaDTO> toDtoListFromDomainList(List<AdministradorCategoriaDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	

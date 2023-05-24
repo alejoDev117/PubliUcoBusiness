@@ -45,6 +45,12 @@ public final class EstadoTipoIdentificacionAssembler implements Assembler<Estado
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public List<EstadoTipoIdentificacionDTO> toDtoListFromDomainList(List<EstadoTipoIdentificacionDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }

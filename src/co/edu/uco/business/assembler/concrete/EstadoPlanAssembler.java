@@ -51,6 +51,13 @@ public final class EstadoPlanAssembler implements Assembler<EstadoPlanDomain,Est
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<EstadoPlanDTO> toDtoListFromDomainList(List<EstadoPlanDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

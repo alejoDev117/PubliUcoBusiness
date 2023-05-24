@@ -55,4 +55,12 @@ public final class TipoRelacionInstitucionAssembler implements Assembler<TipoRel
 		return null;
 	}
 
+
+
+	@Override
+	public List<TipoRelacionInstitucionDTO> toDtoListFromDomainList(List<TipoRelacionInstitucionDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

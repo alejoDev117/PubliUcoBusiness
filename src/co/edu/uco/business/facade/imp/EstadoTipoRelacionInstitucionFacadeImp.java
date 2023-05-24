@@ -10,8 +10,8 @@ import co.edu.uco.business.facade.EstadoTipoRelacionInstitucionFacade;
 import co.edu.uco.crosscutting.exceptions.PubliucoBusinessException;
 import co.edu.uco.crosscutting.exceptions.PubliucoException;
 import co.edu.uco.crosscutting.utils.Messages.EstadoTipoRelacionInstitucionFacadeImpMessage;
-import co.edu.uco.data.dao.Factory;
 import co.edu.uco.data.dao.factory.DAOFactory;
+import co.edu.uco.data.dao.relational.Factory;
 import co.edu.uco.dto.EstadoTipoRelacionInstitucionDTO;
 
 public final class EstadoTipoRelacionInstitucionFacadeImp implements EstadoTipoRelacionInstitucionFacade{

@@ -44,6 +44,12 @@ public final class TipoRevisionAssembler implements Assembler<TipoRevisionDomain
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public List<TipoRevisionDTO> toDtoListFromDomainList(List<TipoRevisionDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

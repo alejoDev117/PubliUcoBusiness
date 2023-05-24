@@ -44,6 +44,12 @@ public final class TipoAccesoAssembler implements Assembler<TipoAccesoDomain,Tip
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public List<TipoAccesoDTO> toDtoListFromDomainList(List<TipoAccesoDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

@@ -62,6 +62,13 @@ public final class LectorAssembler implements Assembler<LectorDomain,LectorDTO,L
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<LectorDTO> toDtoListFromDomainList(List<LectorDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

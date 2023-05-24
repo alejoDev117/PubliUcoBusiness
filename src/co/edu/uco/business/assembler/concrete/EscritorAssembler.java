@@ -55,6 +55,13 @@ public final class EscritorAssembler implements Assembler<EscritorDomain,Escrito
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<EscritorDTO> toDtoListFromDomainList(List<EscritorDomain> domainList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 
